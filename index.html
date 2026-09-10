@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Links</title>
+    <style>
+        /* Dark layout background matching the image */
+        body {
+            background-color: #1a0f0d; 
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* Profile section container */
+        .profile-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Circular profile image with a glowing border */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ff9d76;
+            box-shadow: 0 0 20px rgba(255, 157, 118, 0.4);
+            object-fit: cover;
+        }
+
+        /* Pill tag underneath the avatar */
+        .username-badge {
+            background-color: #3d231e;
+            color: #ff9d76;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 4px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+            border: 1px solid #54312a;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 15px 0 5px 0;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #a3928f;
+            font-size: 1rem;
+            margin: 0 0 30px 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main links container width restriction */
+        .links-wrapper {
+            width: 100%;
+            max-width: 560px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Styled button card matching the rounded rectangles */
+        .link-card {
+            background-color: #2b1916;
+            border: 1px solid #3d2521;
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            border-color: #54312a;
+            background-color: #331e1a;
+        }
+
+        .link-title {
+            color: #ffffff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+        }
+
+        .link-description {
+            color: #a3928f;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Replace with your actual profile picture URL -->
+        <img class="avatar" src="https://github.com" alt="Profile Picture">
+        <br>
+        <div class="username-badge">YOURNAME</div>
+        <h1>Your Title</h1>
+        <p class="subtitle">Tag 1 • Tag 2 • Tag 3</p>
+    </div>
+
+    <div class="links-wrapper">
+        <!-- Card 1 -->
+        <a href="YOUR_URL_HERE" class="link-card">
+            <p class="link-title">StripesADB</p>
+            <p class="link-description">All The Downloads Needed For StripesADB</p>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="YOUR_URL_HERE" class="link-card">
+            <p class="link-title">Delta</p>
+            <p class="link-description">Delta V67 APK</p>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="YOUR_URL_HERE" class="link-card">
+            <p class="link-title">Lightning Launcher</p>
+            <p class="link-description">Download Lightning Launcher APK</p>
+        </a>
+    </div>
+
+</body>
+</html>
